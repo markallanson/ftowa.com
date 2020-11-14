@@ -1,0 +1,514 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Content-Style-Type" content="text/css">
+
+<link rel="top" href="./index.php" title="FTO Drivers Club, Western Australia Forum Index" />
+<link rel="search" href="./search.php" title="Search" />
+<link rel="help" href="./faq.php" title="FAQ" />
+<link rel="author" href="./memberlist.php" title="Memberlist" />
+
+<title>FTO Drivers Club, Western Australia :: Search</title>
+<!-- link rel="stylesheet" href="templates/subSilver/subSilver.css" type="text/css" -->
+<style type="text/css">
+<!--
+/*
+  The original subSilver Theme for phpBB version 2+
+  Created by subBlue design
+  http://www.subBlue.com
+
+  NOTE: These CSS definitions are stored within the main page body so that you can use the phpBB2
+  theme administration centre. When you have finalised your style you could cut the final CSS code
+  and place it in an external file, deleting this section to save bandwidth.
+*/
+
+/* General page style. The scroll bar colours only visible in IE5.5+ */
+body {
+	background-color: #E5E5E5;
+	scrollbar-face-color: #DEE3E7;
+	scrollbar-highlight-color: #FFFFFF;
+	scrollbar-shadow-color: #DEE3E7;
+	scrollbar-3dlight-color: #D1D7DC;
+	scrollbar-arrow-color:  #006699;
+	scrollbar-track-color: #EFEFEF;
+	scrollbar-darkshadow-color: #98AAB1;
+}
+
+/* General font families for common tags */
+font,th,td,p { font-family: Verdana, Arial, Helvetica, sans-serif }
+a:link,a:active,a:visited { color : #006699; }
+a:hover		{ text-decoration: underline; color : #DD6900; }
+hr	{ height: 0px; border: solid #D1D7DC 0px; border-top-width: 1px;}
+
+/* This is the border line & background colour round the entire page */
+.bodyline	{ background-color: #FFFFFF; border: 1px #98AAB1 solid; }
+
+/* This is the outline round the main forum tables */
+.forumline	{ background-color: #FFFFFF; border: 2px #006699 solid; }
+
+/* Main table cell colours and backgrounds */
+td.row1	{ background-color: #EFEFEF; }
+td.row2	{ background-color: #DEE3E7; }
+td.row3	{ background-color: #D1D7DC; }
+
+/*
+  This is for the table cell above the Topics, Post & Last posts on the index.php page
+  By default this is the fading out gradiated silver background.
+  However, you could replace this with a bitmap specific for each forum
+*/
+td.rowpic {
+		background-color: #FFFFFF;
+		background-image: url(templates/subSilver/images/cellpic2.jpg);
+		background-repeat: repeat-y;
+}
+
+/* Header cells - the blue and silver gradient backgrounds */
+th	{
+	color: #FFA34F; font-size: 11px; font-weight : bold;
+	background-color: #006699; height: 25px;
+	background-image: url(templates/subSilver/images/cellpic3.gif);
+}
+
+td.cat,td.catHead,td.catSides,td.catLeft,td.catRight,td.catBottom {
+			background-image: url(templates/subSilver/images/cellpic1.gif);
+			background-color:#D1D7DC; border: #FFFFFF; border-style: solid; height: 28px;
+}
+
+/*
+  Setting additional nice inner borders for the main table cells.
+  The names indicate which sides the border will be on.
+  Don't worry if you don't understand this, just ignore it :-)
+*/
+td.cat,td.catHead,td.catBottom {
+	height: 29px;
+	border-width: 0px 0px 0px 0px;
+}
+th.thHead,th.thSides,th.thTop,th.thLeft,th.thRight,th.thBottom,th.thCornerL,th.thCornerR {
+	font-weight: bold; border: #FFFFFF; border-style: solid; height: 28px;
+}
+td.row3Right,td.spaceRow {
+	background-color: #D1D7DC; border: #FFFFFF; border-style: solid;
+}
+
+th.thHead,td.catHead { font-size: 12px; border-width: 1px 1px 0px 1px; }
+th.thSides,td.catSides,td.spaceRow	 { border-width: 0px 1px 0px 1px; }
+th.thRight,td.catRight,td.row3Right	 { border-width: 0px 1px 0px 0px; }
+th.thLeft,td.catLeft	  { border-width: 0px 0px 0px 1px; }
+th.thBottom,td.catBottom  { border-width: 0px 1px 1px 1px; }
+th.thTop	 { border-width: 1px 0px 0px 0px; }
+th.thCornerL { border-width: 1px 0px 0px 1px; }
+th.thCornerR { border-width: 1px 1px 0px 0px; }
+
+/* The largest text used in the index page title and toptic title etc. */
+.maintitle	{
+	font-weight: bold; font-size: 22px; font-family: "Trebuchet MS",Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none; line-height : 120%; color : #000000;
+}
+
+/* General text */
+.gen { font-size : 12px; }
+.genmed { font-size : 11px; }
+.gensmall { font-size : 10px; }
+.gen,.genmed,.gensmall { color : #000000; }
+a.gen,a.genmed,a.gensmall { color: #006699; text-decoration: none; }
+a.gen:hover,a.genmed:hover,a.gensmall:hover	{ color: #DD6900; text-decoration: underline; }
+
+/* The register, login, search etc links at the top of the page */
+.mainmenu		{ font-size : 11px; color : #000000 }
+a.mainmenu		{ text-decoration: none; color : #006699;  }
+a.mainmenu:hover{ text-decoration: underline; color : #DD6900; }
+
+/* Forum category titles */
+.cattitle		{ font-weight: bold; font-size: 12px ; letter-spacing: 1px; color : #006699}
+a.cattitle		{ text-decoration: none; color : #006699; }
+a.cattitle:hover{ text-decoration: underline; }
+
+/* Forum title: Text and link to the forums used in: index.php */
+.forumlink		{ font-weight: bold; font-size: 12px; color : #006699; }
+a.forumlink 	{ text-decoration: none; color : #006699; }
+a.forumlink:hover{ text-decoration: underline; color : #DD6900; }
+
+/* Used for the navigation text, (Page 1,2,3 etc) and the navigation bar when in a forum */
+.nav			{ font-weight: bold; font-size: 11px; color : #000000;}
+a.nav			{ text-decoration: none; color : #006699; }
+a.nav:hover		{ text-decoration: underline; }
+
+/* titles for the topics: could specify viewed link colour too */
+.topictitle,h1,h2	{ font-weight: bold; font-size: 11px; color : #000000; }
+a.topictitle:link   { text-decoration: none; color : #006699; }
+a.topictitle:visited { text-decoration: none; color : #5493B4; }
+a.topictitle:hover	{ text-decoration: underline; color : #DD6900; }
+
+/* Name of poster in viewmsg.php and viewtopic.php and other places */
+.name			{ font-size : 11px; color : #000000;}
+
+/* Location, number of posts, post date etc */
+.postdetails		{ font-size : 10px; color : #000000; }
+
+/* The content of the posts (body of text) */
+.postbody { font-size : 12px; line-height: 18px}
+a.postlink:link	{ text-decoration: none; color : #006699 }
+a.postlink:visited { text-decoration: none; color : #5493B4; }
+a.postlink:hover { text-decoration: underline; color : #DD6900}
+
+/* Quote & Code blocks */
+.code {
+	font-family: Courier, 'Courier New', sans-serif; font-size: 11px; color: #006600;
+	background-color: #FAFAFA; border: #D1D7DC; border-style: solid;
+	border-left-width: 1px; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px
+}
+
+.quote {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #444444; line-height: 125%;
+	background-color: #FAFAFA; border: #D1D7DC; border-style: solid;
+	border-left-width: 1px; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px
+}
+
+/* Copyright and bottom info */
+.copyright		{ font-size: 10px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #444444; letter-spacing: -1px;}
+a.copyright		{ color: #444444; text-decoration: none;}
+a.copyright:hover { color: #000000; text-decoration: underline;}
+
+/* Form elements */
+input,textarea, select {
+	color : #000000;
+	font: normal 11px Verdana, Arial, Helvetica, sans-serif;
+	border-color : #000000;
+}
+
+/* The text input fields background colour */
+input.post, textarea.post, select {
+	background-color : #FFFFFF;
+}
+
+input { text-indent : 2px; }
+
+/* The buttons used for bbCode styling in message post */
+input.button {
+	background-color : #EFEFEF;
+	color : #000000;
+	font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* The main submit button option */
+input.mainoption {
+	background-color : #FAFAFA;
+	font-weight : bold;
+}
+
+/* None-bold submit button */
+input.liteoption {
+	background-color : #FAFAFA;
+	font-weight : normal;
+}
+
+/* This is the line in the posting page which shows the rollover
+  help line. This is actually a text box, but if set to be the same
+  colour as the background no one will know ;)
+*/
+.helpline { background-color: #DEE3E7; border-style: none; }
+
+/* Import the fancy styles for IE only (NS4.x doesn't use the @import function) */
+@import url("templates/subSilver/formIE.css");
+-->
+</style>
+</head>
+<body bgcolor="#E5E5E5" text="#000000" link="#006699" vlink="#5493B4">
+
+<a name="top"></a>
+
+<table width="100%" cellspacing="0" cellpadding="10" border="0" align="center">
+	<tr>
+		<td class="bodyline"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+				<td><a href="index.php"><img src="templates/subSilver/images/logo_phpBB.gif" border="0" alt="FTO Drivers Club, Western Australia Forum Index" vspace="1" /></a></td>
+				<td align="center" width="100%" valign="middle"><span class="maintitle">FTO Drivers Club, Western Australia</span><br /><span class="gen">A general discussion for members of the FTO Drivers Club (WA)<br />&nbsp; </span>
+				<table cellspacing="0" cellpadding="2" border="0">
+					<tr>
+						<td align="center" valign="top" nowrap="nowrap"><span class="mainmenu">&nbsp;<a href="faq.php" class="mainmenu"><img src="templates/subSilver/images/icon_mini_faq.gif" width="12" height="13" border="0" alt="FAQ" hspace="3" />FAQ</a>&nbsp; &nbsp;<a href="search.php" class="mainmenu"><img src="templates/subSilver/images/icon_mini_search.gif" width="12" height="13" border="0" alt="Search" hspace="3" />Search</a>&nbsp; &nbsp;<a href="memberlist.php" class="mainmenu"><img src="templates/subSilver/images/icon_mini_members.gif" width="12" height="13" border="0" alt="Memberlist" hspace="3" />Memberlist</a>&nbsp; &nbsp;<a href="groupcp.php" class="mainmenu"><img src="templates/subSilver/images/icon_mini_groups.gif" width="12" height="13" border="0" alt="Usergroups" hspace="3" />Usergroups</a>&nbsp;
+						&nbsp;<a href="profile.php?mode=register" class="mainmenu"><img src="templates/subSilver/images/icon_mini_register.gif" width="12" height="13" border="0" alt="Register" hspace="3" />Register</a>&nbsp;
+						</span></td>
+					</tr>
+					<tr>
+						<td height="25" align="center" valign="top" nowrap="nowrap"><span class="mainmenu">&nbsp;<a href="profile.php?mode=editprofile" class="mainmenu"><img src="templates/subSilver/images/icon_mini_profile.gif" width="12" height="13" border="0" alt="Profile" hspace="3" />Profile</a>&nbsp; &nbsp;<a href="privmsg.php?folder=inbox" class="mainmenu"><img src="templates/subSilver/images/icon_mini_message.gif" width="12" height="13" border="0" alt="Log in to check your private messages" hspace="3" />Log in to check your private messages</a>&nbsp; &nbsp;<a href="login.php" class="mainmenu"><img src="templates/subSilver/images/icon_mini_login.gif" width="12" height="13" border="0" alt="Log in" hspace="3" />Log in</a>&nbsp;</span></td>
+					</tr>
+				</table></td>
+			</tr>
+		</table>
+
+		<br />
+
+
+<table width="100%" cellspacing="2" cellpadding="2" border="0" align="center">
+  <tr>
+	<td align="left" valign="bottom"><span class="maintitle">Search found 24 matches</span><br /></td>
+  </tr>
+</table>
+
+<table width="100%" cellspacing="2" cellpadding="2" border="0" align="center">
+  <tr>
+	<td align="left"><span class="nav"><a href="index.php" class="nav">FTO Drivers Club, Western Australia Forum Index</a></span></td>
+  </tr>
+</table>
+
+<table border="0" cellpadding="3" cellspacing="1" width="100%" class="forumline" align="center">
+  <tr>
+	<th width="150" height="25" class="thCornerL" nowrap="nowrap">Author</th>
+	<th width="100%" class="thCornerR" nowrap="nowrap">Message</th>
+  </tr>
+  <tr>
+	<td class="catHead" colspan="2" height="28"><span class="topictitle"><img src="templates/subSilver/images/folder.gif" align="absmiddle" />&nbsp; Topic:&nbsp;<a href="viewtopic.php?t=569&amp;highlight=" class="topictitle">need a car bonnet...ASAP</a></span></td>
+  </tr>
+  <tr>
+	<td width="150" align="left" valign="top" class="row1" rowspan="2"><span class="name"><b><a href="profile.php?mode=viewprofile&amp;u=40">Uisce</a></b></span><br />
+	  <br />
+	  <span class="postdetails">Replies: <b>8</b><br />
+	  Views: <b>1261</b></span><br />
+	</td>
+	<td width="100%" valign="top" class="row1"><img src="templates/subSilver/images/icon_minipost.gif" width="12" height="9" alt="Post" title="Post" border="0" /><span class="postdetails">Forum:&nbsp;<b><a href="viewforum.php?f=1" class="postdetails">General Discussion</a></b>&nbsp; &nbsp;Posted: Tue Nov 29, 2005 4:05 pm&nbsp; &nbsp;Subject: <b><a href="viewtopic.php?p=3092&amp;highlight=#3092">need a car bonnet...ASAP</a></b></span></td>
+  </tr>
+  <tr>
+	<td valign="top" class="row1"><span class="postbody">Here's the link with a few more: http://www.carmate.com/display_products.php?carMake=mistubishi&amp;carModel=FTO&amp;year=1995-2000</span></td>
+  </tr>
+  <tr>
+	<td class="catHead" colspan="2" height="28"><span class="topictitle"><img src="templates/subSilver/images/folder.gif" align="absmiddle" />&nbsp; Topic:&nbsp;<a href="viewtopic.php?t=569&amp;highlight=" class="topictitle">need a car bonnet...ASAP</a></span></td>
+  </tr>
+  <tr>
+	<td width="150" align="left" valign="top" class="row1" rowspan="2"><span class="name"><b><a href="profile.php?mode=viewprofile&amp;u=40">Uisce</a></b></span><br />
+	  <br />
+	  <span class="postdetails">Replies: <b>8</b><br />
+	  Views: <b>1261</b></span><br />
+	</td>
+	<td width="100%" valign="top" class="row1"><img src="templates/subSilver/images/icon_minipost.gif" width="12" height="9" alt="Post" title="Post" border="0" /><span class="postdetails">Forum:&nbsp;<b><a href="viewforum.php?f=1" class="postdetails">General Discussion</a></b>&nbsp; &nbsp;Posted: Tue Nov 29, 2005 4:04 pm&nbsp; &nbsp;Subject: <b><a href="viewtopic.php?p=3091&amp;highlight=#3091">need a car bonnet...ASAP</a></b></span></td>
+  </tr>
+  <tr>
+	<td valign="top" class="row1"><span class="postbody">there are a few places around I'm sure that did the carbon fibre bonnets for the FTO... cant remember who tho off the top of my head sorry!!<br /><br />cheers<br />Couple here: http://www.carmate.com/product_deta ...</span></td>
+  </tr>
+  <tr>
+	<td class="catHead" colspan="2" height="28"><span class="topictitle"><img src="templates/subSilver/images/folder.gif" align="absmiddle" />&nbsp; Topic:&nbsp;<a href="viewtopic.php?t=573&amp;highlight=" class="topictitle">Insurance for my FTO.</a></span></td>
+  </tr>
+  <tr>
+	<td width="150" align="left" valign="top" class="row1" rowspan="2"><span class="name"><b><a href="profile.php?mode=viewprofile&amp;u=40">Uisce</a></b></span><br />
+	  <br />
+	  <span class="postdetails">Replies: <b>4</b><br />
+	  Views: <b>875</b></span><br />
+	</td>
+	<td width="100%" valign="top" class="row1"><img src="templates/subSilver/images/icon_minipost.gif" width="12" height="9" alt="Post" title="Post" border="0" /><span class="postdetails">Forum:&nbsp;<b><a href="viewforum.php?f=1" class="postdetails">General Discussion</a></b>&nbsp; &nbsp;Posted: Tue Nov 29, 2005 3:31 pm&nbsp; &nbsp;Subject: <b><a href="viewtopic.php?p=3090&amp;highlight=#3090">Insurance for my FTO.</a></b></span></td>
+  </tr>
+  <tr>
+	<td valign="top" class="row1"><span class="postbody">HBF here as well. I managed to negotiate a 20% no claim bonus with them without having any prior comprehensive insurance. I'm 23, on a 50% no claim bonus and I pay about $52 a fortnight (for $20,000 a ...</span></td>
+  </tr>
+  <tr>
+	<td class="catHead" colspan="2" height="28"><span class="topictitle"><img src="templates/subSilver/images/folder.gif" align="absmiddle" />&nbsp; Topic:&nbsp;<a href="viewtopic.php?t=467&amp;highlight=" class="topictitle">Lights legal?</a></span></td>
+  </tr>
+  <tr>
+	<td width="150" align="left" valign="top" class="row1" rowspan="2"><span class="name"><b><a href="profile.php?mode=viewprofile&amp;u=40">Uisce</a></b></span><br />
+	  <br />
+	  <span class="postdetails">Replies: <b>5</b><br />
+	  Views: <b>912</b></span><br />
+	</td>
+	<td width="100%" valign="top" class="row1"><img src="templates/subSilver/images/icon_minipost.gif" width="12" height="9" alt="Post" title="Post" border="0" /><span class="postdetails">Forum:&nbsp;<b><a href="viewforum.php?f=1" class="postdetails">General Discussion</a></b>&nbsp; &nbsp;Posted: Tue Nov 29, 2005 3:18 pm&nbsp; &nbsp;Subject: <b><a href="viewtopic.php?p=3089&amp;highlight=#3089">Lights legal?</a></b></span></td>
+  </tr>
+  <tr>
+	<td valign="top" class="row1"><span class="postbody">Should probably follow up on what happened with these... <img src="images/smiles/icon_lol.gif" alt="Laughing" border="0" /><br /><br />The same night that I posted this thread, I went for a drive to pick up some friends from Northbridge. I was about a minute into my tr ...</span></td>
+  </tr>
+  <tr>
+	<td class="catHead" colspan="2" height="28"><span class="topictitle"><img src="templates/subSilver/images/folder.gif" align="absmiddle" />&nbsp; Topic:&nbsp;<a href="viewtopic.php?t=467&amp;highlight=" class="topictitle">Lights legal?</a></span></td>
+  </tr>
+  <tr>
+	<td width="150" align="left" valign="top" class="row1" rowspan="2"><span class="name"><b><a href="profile.php?mode=viewprofile&amp;u=40">Uisce</a></b></span><br />
+	  <br />
+	  <span class="postdetails">Replies: <b>5</b><br />
+	  Views: <b>912</b></span><br />
+	</td>
+	<td width="100%" valign="top" class="row1"><img src="templates/subSilver/images/icon_minipost.gif" width="12" height="9" alt="Post" title="Post" border="0" /><span class="postdetails">Forum:&nbsp;<b><a href="viewforum.php?f=1" class="postdetails">General Discussion</a></b>&nbsp; &nbsp;Posted: Thu Apr 21, 2005 8:08 pm&nbsp; &nbsp;Subject: <b><a href="viewtopic.php?p=2468&amp;highlight=#2468">Lights legal?</a></b></span></td>
+  </tr>
+  <tr>
+	<td valign="top" class="row1"><span class="postbody">Heh, the joys of buying on eBay. <img src="images/smiles/icon_confused.gif" alt="Confused" border="0" /><br /><br />Just bought myself some PIAA Plasma Spark Blue Headlights &amp; LEDs from eBay for dirt cheap. The lights themselves look fine, but I'm a little worried about th ...</span></td>
+  </tr>
+  <tr>
+	<td class="catHead" colspan="2" height="28"><span class="topictitle"><img src="templates/subSilver/images/folder.gif" align="absmiddle" />&nbsp; Topic:&nbsp;<a href="viewtopic.php?t=454&amp;highlight=" class="topictitle">Bent control arm - a few questions.</a></span></td>
+  </tr>
+  <tr>
+	<td width="150" align="left" valign="top" class="row1" rowspan="2"><span class="name"><b><a href="profile.php?mode=viewprofile&amp;u=40">Uisce</a></b></span><br />
+	  <br />
+	  <span class="postdetails">Replies: <b>3</b><br />
+	  Views: <b>561</b></span><br />
+	</td>
+	<td width="100%" valign="top" class="row1"><img src="templates/subSilver/images/icon_minipost.gif" width="12" height="9" alt="Post" title="Post" border="0" /><span class="postdetails">Forum:&nbsp;<b><a href="viewforum.php?f=1" class="postdetails">General Discussion</a></b>&nbsp; &nbsp;Posted: Tue Apr 12, 2005 11:47 pm&nbsp; &nbsp;Subject: <b><a href="viewtopic.php?p=2433&amp;highlight=#2433">Bent control arm - a few questions.</a></b></span></td>
+  </tr>
+  <tr>
+	<td valign="top" class="row1"><span class="postbody">Mitsubie had 9 pre facelift dash forward non accident half cuts with panels 3 weeks ago when i was up there, they should have your part.<br /><br />mitsubie auto recyclers (08)92093900 <br /><br />email mitsubie@aol. ...</span></td>
+  </tr>
+  <tr>
+	<td class="catHead" colspan="2" height="28"><span class="topictitle"><img src="templates/subSilver/images/folder.gif" align="absmiddle" />&nbsp; Topic:&nbsp;<a href="viewtopic.php?t=454&amp;highlight=" class="topictitle">Bent control arm - a few questions.</a></span></td>
+  </tr>
+  <tr>
+	<td width="150" align="left" valign="top" class="row1" rowspan="2"><span class="name"><b><a href="profile.php?mode=viewprofile&amp;u=40">Uisce</a></b></span><br />
+	  <br />
+	  <span class="postdetails">Replies: <b>3</b><br />
+	  Views: <b>561</b></span><br />
+	</td>
+	<td width="100%" valign="top" class="row1"><img src="templates/subSilver/images/icon_minipost.gif" width="12" height="9" alt="Post" title="Post" border="0" /><span class="postdetails">Forum:&nbsp;<b><a href="viewforum.php?f=1" class="postdetails">General Discussion</a></b>&nbsp; &nbsp;Posted: Fri Apr 08, 2005 12:44 am&nbsp; &nbsp;Subject: <b><a href="viewtopic.php?p=2397&amp;highlight=#2397">Bent control arm - a few questions.</a></b></span></td>
+  </tr>
+  <tr>
+	<td valign="top" class="row1"><span class="postbody">I found out a while ago that the left-front control arm on my FTO is a little out of shape, and probably the cause of some tyre scrubbing when the steering wheel is at full turn to the left. It's not  ...</span></td>
+  </tr>
+  <tr>
+	<td class="catHead" colspan="2" height="28"><span class="topictitle"><img src="templates/subSilver/images/folder.gif" align="absmiddle" />&nbsp; Topic:&nbsp;<a href="viewtopic.php?t=387&amp;highlight=" class="topictitle">Veilside body kit in WA</a></span></td>
+  </tr>
+  <tr>
+	<td width="150" align="left" valign="top" class="row1" rowspan="2"><span class="name"><b><a href="profile.php?mode=viewprofile&amp;u=40">Uisce</a></b></span><br />
+	  <br />
+	  <span class="postdetails">Replies: <b>10</b><br />
+	  Views: <b>1870</b></span><br />
+	</td>
+	<td width="100%" valign="top" class="row1"><img src="templates/subSilver/images/icon_minipost.gif" width="12" height="9" alt="Post" title="Post" border="0" /><span class="postdetails">Forum:&nbsp;<b><a href="viewforum.php?f=1" class="postdetails">General Discussion</a></b>&nbsp; &nbsp;Posted: Thu Apr 07, 2005 10:52 pm&nbsp; &nbsp;Subject: <b><a href="viewtopic.php?p=2394&amp;highlight=#2394">Veilside body kit in WA</a></b></span></td>
+  </tr>
+  <tr>
+	<td valign="top" class="row1"><span class="postbody">Ah, haven't been around for a while so I figured that I'd just add my 2c into this discussion seeing as I've been exploring the options myself.<br /><br />I was quoted $2500 for VS front bar / side skirts / r ...</span></td>
+  </tr>
+  <tr>
+	<td class="catHead" colspan="2" height="28"><span class="topictitle"><img src="templates/subSilver/images/folder.gif" align="absmiddle" />&nbsp; Topic:&nbsp;<a href="viewtopic.php?t=175&amp;highlight=" class="topictitle">FTO wanted for Friday Nov 7 for HPI photo shoot, apparently</a></span></td>
+  </tr>
+  <tr>
+	<td width="150" align="left" valign="top" class="row1" rowspan="2"><span class="name"><b><a href="profile.php?mode=viewprofile&amp;u=40">Uisce</a></b></span><br />
+	  <br />
+	  <span class="postdetails">Replies: <b>3</b><br />
+	  Views: <b>486</b></span><br />
+	</td>
+	<td width="100%" valign="top" class="row1"><img src="templates/subSilver/images/icon_minipost.gif" width="12" height="9" alt="Post" title="Post" border="0" /><span class="postdetails">Forum:&nbsp;<b><a href="viewforum.php?f=1" class="postdetails">General Discussion</a></b>&nbsp; &nbsp;Posted: Thu Nov 06, 2003 8:34 am&nbsp; &nbsp;Subject: <b><a href="viewtopic.php?p=1045&amp;highlight=#1045">FTO wanted for Friday Nov 7 for HPI photo shoot, apparently</a></b></span></td>
+  </tr>
+  <tr>
+	<td valign="top" class="row1"><span class="postbody">I have a '95 black GPX that's pretty much stock - bar a few minor cosmetic changes. However, I need give it a wash / cut back before it gets photos taken of it! <img src="images/smiles/icon_lol.gif" alt="Laughing" border="0" /><br /><br />What kind of company or organi ...</span></td>
+  </tr>
+  <tr>
+	<td class="catHead" colspan="2" height="28"><span class="topictitle"><img src="templates/subSilver/images/folder.gif" align="absmiddle" />&nbsp; Topic:&nbsp;<a href="viewtopic.php?t=132&amp;highlight=" class="topictitle">Wheel dilemma - opinions?</a></span></td>
+  </tr>
+  <tr>
+	<td width="150" align="left" valign="top" class="row1" rowspan="2"><span class="name"><b><a href="profile.php?mode=viewprofile&amp;u=40">Uisce</a></b></span><br />
+	  <br />
+	  <span class="postdetails">Replies: <b>16</b><br />
+	  Views: <b>2067</b></span><br />
+	</td>
+	<td width="100%" valign="top" class="row1"><img src="templates/subSilver/images/icon_minipost.gif" width="12" height="9" alt="Post" title="Post" border="0" /><span class="postdetails">Forum:&nbsp;<b><a href="viewforum.php?f=1" class="postdetails">General Discussion</a></b>&nbsp; &nbsp;Posted: Sun Oct 26, 2003 6:01 pm&nbsp; &nbsp;Subject: <b><a href="viewtopic.php?p=995&amp;highlight=#995">Wheel dilemma - opinions?</a></b></span></td>
+  </tr>
+  <tr>
+	<td valign="top" class="row1"><span class="postbody">nice pics...<br /><br />but geez dude... can ya shrink the size of them a bit.... they are HUUUGE and take for ever to d/l on dialup....<br /><br />nice choice in wheels too.... what did a end up doing with the old 1 ...</span></td>
+  </tr>
+  <tr>
+	<td class="catHead" colspan="2" height="28"><span class="topictitle"><img src="templates/subSilver/images/folder.gif" align="absmiddle" />&nbsp; Topic:&nbsp;<a href="viewtopic.php?t=132&amp;highlight=" class="topictitle">Wheel dilemma - opinions?</a></span></td>
+  </tr>
+  <tr>
+	<td width="150" align="left" valign="top" class="row1" rowspan="2"><span class="name"><b><a href="profile.php?mode=viewprofile&amp;u=40">Uisce</a></b></span><br />
+	  <br />
+	  <span class="postdetails">Replies: <b>16</b><br />
+	  Views: <b>2067</b></span><br />
+	</td>
+	<td width="100%" valign="top" class="row1"><img src="templates/subSilver/images/icon_minipost.gif" width="12" height="9" alt="Post" title="Post" border="0" /><span class="postdetails">Forum:&nbsp;<b><a href="viewforum.php?f=1" class="postdetails">General Discussion</a></b>&nbsp; &nbsp;Posted: Sun Oct 26, 2003 1:43 am&nbsp; &nbsp;Subject: <b><a href="viewtopic.php?p=991&amp;highlight=#991">Wheel dilemma - opinions?</a></b></span></td>
+  </tr>
+  <tr>
+	<td valign="top" class="row1"><span class="postbody">if you dont mind me asking,.....what kinda $ did that set you back for rims and tyres.....thinkin of upgradin from stock GPX tyres myself and wanna know what kinda $  ill be up for in the process<br /><br /> ...</span></td>
+  </tr>
+  <tr>
+	<td class="catHead" colspan="2" height="28"><span class="topictitle"><img src="templates/subSilver/images/folder.gif" align="absmiddle" />&nbsp; Topic:&nbsp;<a href="viewtopic.php?t=132&amp;highlight=" class="topictitle">Wheel dilemma - opinions?</a></span></td>
+  </tr>
+  <tr>
+	<td width="150" align="left" valign="top" class="row1" rowspan="2"><span class="name"><b><a href="profile.php?mode=viewprofile&amp;u=40">Uisce</a></b></span><br />
+	  <br />
+	  <span class="postdetails">Replies: <b>16</b><br />
+	  Views: <b>2067</b></span><br />
+	</td>
+	<td width="100%" valign="top" class="row1"><img src="templates/subSilver/images/icon_minipost.gif" width="12" height="9" alt="Post" title="Post" border="0" /><span class="postdetails">Forum:&nbsp;<b><a href="viewforum.php?f=1" class="postdetails">General Discussion</a></b>&nbsp; &nbsp;Posted: Sat Oct 25, 2003 2:23 pm&nbsp; &nbsp;Subject: <b><a href="viewtopic.php?p=988&amp;highlight=#988">Wheel dilemma - opinions?</a></b></span></td>
+  </tr>
+  <tr>
+	<td valign="top" class="row1"><span class="postbody">Just thought I'd update you on what I ended up doing.<br /><br />[url=http://www.westnet.com.au/pwilcox/new_rims.jpg]Whole car image<br />[url=http://www.westnet.com.au/pwilcox/new_rims_close.jpg]Image of rims<br /> ...</span></td>
+  </tr>
+  <tr>
+	<td class="catHead" colspan="2" height="28"><span class="topictitle"><img src="templates/subSilver/images/folder.gif" align="absmiddle" />&nbsp; Topic:&nbsp;<a href="viewtopic.php?t=120&amp;highlight=" class="topictitle">MC Motorsport - am session, Sunday Oct 19</a></span></td>
+  </tr>
+  <tr>
+	<td width="150" align="left" valign="top" class="row1" rowspan="2"><span class="name"><b><a href="profile.php?mode=viewprofile&amp;u=40">Uisce</a></b></span><br />
+	  <br />
+	  <span class="postdetails">Replies: <b>23</b><br />
+	  Views: <b>3988</b></span><br />
+	</td>
+	<td width="100%" valign="top" class="row1"><img src="templates/subSilver/images/icon_minipost.gif" width="12" height="9" alt="Post" title="Post" border="0" /><span class="postdetails">Forum:&nbsp;<b><a href="viewforum.php?f=2" class="postdetails">Club Event Discussion</a></b>&nbsp; &nbsp;Posted: Tue Oct 14, 2003 8:44 pm&nbsp; &nbsp;Subject: <b><a href="viewtopic.php?p=931&amp;highlight=#931">MC Motorsport - am session, Sunday Oct 19</a></b></span></td>
+  </tr>
+  <tr>
+	<td valign="top" class="row1"><span class="postbody">Due to some unforseen expenses I'm gonna have to withdraw from this... I really can't spare $100 right now. Sorry guys & gals. <img src="images/smiles/icon_sad.gif" alt="Sad" border="0" /></span></td>
+  </tr>
+  <tr>
+	<td class="catHead" colspan="2" height="28"><span class="topictitle"><img src="templates/subSilver/images/folder.gif" align="absmiddle" />&nbsp; Topic:&nbsp;<a href="viewtopic.php?t=123&amp;highlight=" class="topictitle">Photo Shoot / Cruise, 4th October</a></span></td>
+  </tr>
+  <tr>
+	<td width="150" align="left" valign="top" class="row1" rowspan="2"><span class="name"><b><a href="profile.php?mode=viewprofile&amp;u=40">Uisce</a></b></span><br />
+	  <br />
+	  <span class="postdetails">Replies: <b>22</b><br />
+	  Views: <b>3966</b></span><br />
+	</td>
+	<td width="100%" valign="top" class="row1"><img src="templates/subSilver/images/icon_minipost.gif" width="12" height="9" alt="Post" title="Post" border="0" /><span class="postdetails">Forum:&nbsp;<b><a href="viewforum.php?f=2" class="postdetails">Club Event Discussion</a></b>&nbsp; &nbsp;Posted: Wed Oct 01, 2003 7:20 am&nbsp; &nbsp;Subject: <b><a href="viewtopic.php?p=875&amp;highlight=#875">Photo Shoot / Cruise, 4th October</a></b></span></td>
+  </tr>
+  <tr>
+	<td valign="top" class="row1"><span class="postbody">I don't wish to alarm anyone, but is the calendar we're doing the photoshoot a competition run by the FTO Owner's Club ( http://www.ftooc.org/ )?<br /><br />If so...<br /><br /><br />The deadline for picture submission i ...</span></td>
+  </tr>
+  <tr>
+	<td class="catHead" colspan="2" height="28"><span class="topictitle"><img src="templates/subSilver/images/folder.gif" align="absmiddle" />&nbsp; Topic:&nbsp;<a href="viewtopic.php?t=132&amp;highlight=" class="topictitle">Wheel dilemma - opinions?</a></span></td>
+  </tr>
+  <tr>
+	<td width="150" align="left" valign="top" class="row1" rowspan="2"><span class="name"><b><a href="profile.php?mode=viewprofile&amp;u=40">Uisce</a></b></span><br />
+	  <br />
+	  <span class="postdetails">Replies: <b>16</b><br />
+	  Views: <b>2067</b></span><br />
+	</td>
+	<td width="100%" valign="top" class="row1"><img src="templates/subSilver/images/icon_minipost.gif" width="12" height="9" alt="Post" title="Post" border="0" /><span class="postdetails">Forum:&nbsp;<b><a href="viewforum.php?f=1" class="postdetails">General Discussion</a></b>&nbsp; &nbsp;Posted: Thu Sep 25, 2003 4:06 pm&nbsp; &nbsp;Subject: <b><a href="viewtopic.php?p=860&amp;highlight=#860">Wheel dilemma - opinions?</a></b></span></td>
+  </tr>
+  <tr>
+	<td valign="top" class="row1"><span class="postbody">Now that I've had my car for a few months, I need to get some cosmetic stuff sorted out with it. The main problem I'm having is deciding what to do with the rims that came with the car.<br /><br />Here are so ...</span></td>
+  </tr>
+  <tr>
+	<td class="catBottom" colspan="2" height="28" align="center">&nbsp; </td>
+  </tr>
+</table>
+
+<table width="100%" cellspacing="2" border="0" align="center" cellpadding="2">
+  <tr>
+	<td align="left" valign="top"><span class="nav">Page <b>1</b> of <b>2</b></span></td>
+	<td align="right" valign="top" nowrap="nowrap"><span class="nav">Goto page <b>1</b>, <a href="search.php?search_id=320157833&amp;start=15">2</a>&nbsp;&nbsp;<a href="search.php?search_id=320157833&amp;start=15">Next</a></span><br /><span class="gensmall">All times are GMT + 8 Hours</span></td>
+  </tr>
+</table>
+
+<table width="100%" cellspacing="2" border="0" align="center">
+  <tr>
+	<td valign="top" align="right">
+<form method="get" name="jumpbox" action="viewforum.php" onSubmit="if(document.jumpbox.f.value == -1){return false;}"><table cellspacing="0" cellpadding="0" border="0">
+	<tr>
+		<td nowrap="nowrap"><span class="gensmall">Jump to:&nbsp;<select name="f" onchange="if(this.options[this.selectedIndex].value != -1){ forms['jumpbox'].submit() }"><option value="-1">Select a forum</option><option value="-1">&nbsp;</option><option value="-1">General</option><option value="-1">----------------</option><option value="1">General Discussion</option><option value="2">Club Event Discussion</option><option value="3">Club Motorsport</option></select><input type="hidden" name="sid" value="25e7eb56711ac0859a813da1a2394e01" />&nbsp;<input type="submit" value="Go" class="liteoption" /></span></td>
+	</tr>
+</table></form>
+
+</td>
+  </tr>
+</table>
+
+
+<div align="center"><span class="copyright"><br /><br />
+<!--
+	We request you retain the full copyright notice below including the link to www.phpbb.com.
+	This not only gives respect to the large amount of time given freely by the developers
+	but also helps build interest, traffic and use of phpBB 2.0. If you cannot (for good
+	reason) retain the full copyright we request you at least leave in place the
+	Powered by phpBB line, with phpBB linked to www.phpbb.com. If you refuse
+	to include even this then support on our forums may be affected.
+
+	The phpBB Group : 2002
+// -->
+Powered by <a href="http://www.phpbb.com/" target="_phpbb" class="copyright">phpBB</a> &copy; 2001, 2005 phpBB Group<br /></span></div>
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>
+
