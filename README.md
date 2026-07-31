@@ -12,6 +12,8 @@ it statically (it was migrated off its original Windows/IIS host to static hosti
 > broken](#what-works-vs-what-is-broken) — the interactive membership/forum features
 > do **not** function on static hosting.
 
+The archive is hosted at **[https://ftowa.allanson.org](https://ftowa.allanson.org)**.
+
 ---
 
 ## What / Why
