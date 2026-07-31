@@ -50,7 +50,7 @@
                 <td width="150"><a href="/cgi-bin/processmembership.cgi"><font color="#FFFFFF" size="2">*Join*<br>
                   </font></a><font color="#FFFFFF" size="2"><a href="/cgi-bin/memberlist.cgi">Members<br>
                   </a></font><font color="#FFFFFF" size="2"><a href="/html/calendar.html">Events</a><br>
-                  <a href="http://www.ftowa.com/forum">Forum</a><br>
+                  <a href="https://ftowa.allanson.org/forum">Forum</a><br>
                   <a href="/html/messageboard.html">Message Boards</a></font></td>
               </tr>
             </table>
@@ -112,7 +112,7 @@ src="http://w0.extreme-dm.com/0.gif?tag=ftowa&j=n"> </font>
     <td  bgcolor="#003399" height="596" valign="top"> <p><font color="#FFFFFF" size="2"><br>
         </font><b><font size="2">Error 500: Internal Server Error!</font></b></p>
       <p><b><font size="2">I'm sorry, but we've stuffed something up! Please tell 
-        <a href="mailto:marke@ftowa.com">Mark</a> and give him as much information 
+        <a href="mailto:mark@allanson.org">Mark</a> and give him as much information 
         as you can!</font></b></p>
       <p><b><font size="2"><br>
         <b>You requested:</b> 
