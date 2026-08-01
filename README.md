@@ -105,7 +105,6 @@ profile* links. This is expected for an archive.
     ├── run.cgi             # ⚠️ Dangerous remote command-execution script (see AGENTS.md)
     ├── ptHTML.pm           # Tiny template engine: replaces ~token~ placeholders in HTML
     ├── ptDIO.pm            # Flat-file load/save + sendmail wrapper
-    ├── members             # Flat-file member "database" (see below)
     ├── cgiecho             # Third-party CGI echo utility
     └── access_log, error_log  # Original server logs
 ```
@@ -116,21 +115,6 @@ The interactive features of the original site were plain Perl CGI. The source is
 kept here for completeness, but it **cannot run on static hosting** (Vercel and
 similar have no Perl/CGI runtime), and the scripts use Windows Perl shebangs
 (`#!C:\Perl\bin\perl.exe`) that wouldn't execute on Unix even if a runtime existed.
-
-### The `members` flat-file "database"
-
-`cgi-bin/members` is a plain-text key/value store (`key=value`, one per line). A
-member record is keyed by nickname, with fields stored as suffixed keys, e.g.
-`MarkAllansonname=…`, `MarkAllansonemail=…`, `MarkAllansmods=…` (newlines within a
-multi-line field are encoded as `~`). The presence of an entry `nickname=1` marks a
-valid member.
-
-> ⚠️ **Be aware:** This file is heavily polluted with **spam sign-ups** (thousands
-> of "Adult Webcam" entries) and historically stored **plaintext passwords** and
-> **email addresses**. Treat it as sensitive historical data — do not assume the
-> contact details in it are legitimate or that passwords were ever secured.
-
----
 
 ## Previewing locally
 

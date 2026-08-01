@@ -49,7 +49,7 @@ its value.
 
 ### cgi-bin/ internals
 
-- `processmembership.cgi` — Join form handler; validates then appends to the flat-file DB.
+- `processmembership.cgi` — Join form handler; validates input and appends a member record to a flat file.
 - `memberlist.cgi` — Renders the member directory from the flat file.
 - `showprofile.cgi` — Renders one member's profile from the flat file into `html/memberprofiletemplate.html`.
 - `profileedit.cgi` — Edits a member record (password-gated).
@@ -59,7 +59,7 @@ its value.
 - `run.cgi` — **Dangerous.** See [Security](#security).
 - `ptHTML.pm` — Template engine: `displayHTML(file, %hash)` substitutes every `~token~` in a file with the matching hash value. This is why `html/*template.html` and `join.html` contain `~field~` placeholders.
 - `ptDIO.pm` — Flat-file key/value `loadFile`/`saveFile` and a sendmail wrapper.
-- `members` — The flat-file member DB; `cgiecho`, `access_log`, `error_log` — server artifacts.
+- `cgiecho`, `access_log`, `error_log` — server artifacts.
 
 ---
 
@@ -75,11 +75,6 @@ its value.
   UTF-8 or you'll corrupt non-ASCII bytes.
 - **Template placeholders.** HTML files containing `~something~` are CGI templates
   consumed by `ptHTML::displayHTML`. The `~token~` syntax is load-bearing.
-- **Flat-file DB format** (`cgi-bin/members`): `key=value` per line; a member record
-  is `<nickname>=1` plus suffixed fields (`<nickname>name`, `<nickname>email`,
-  `<nickname>car`, `<nickname>mods`, `<nickname>comment`, `<nickname>password`,
-  `<nickname>picture1..6`, `<nickname>dontshow`). Newlines inside text fields are
-  stored as `~`.
 - **Perl shebangs are Windows paths** (`#!C:\Perl\bin\perl.exe`) — except `run.cgi`
   and `showpage.cgi` which use `#!/usr/bin/perl`. None execute on static hosting.
 - **Filename casing is mixed** (`MarkAllanson`, `Faye`, `FTO-R`, `Rosie`, etc.).
@@ -95,18 +90,14 @@ its value.
 - **CGI endpoints 404 by design.** Navigation links to `/cgi-bin/*.cgi` will not
   resolve on static hosting. This is expected; do not "fix" it by rewriting links
   unless explicitly asked.
-- **`cgi-bin/members` is contaminated.** It contains thousands of spam sign-ups
-  (porn/webcam spam) and historically stored **plaintext passwords** and emails.
-  Treat as sensitive data. Don't surface its contents in user-facing output without
-  filtering, and never "import" it into anything live.
 - **`web.config` and `*.shtml` are inert** on static hosts. Editing them changes
   nothing about how the site is served today.
 - **`html/ASNews.html` / `html/AutoNews.html`** are *generated* fragments (output of
   `newsgrabber.cgi`), included into pages. They reference long-dead external sites.
 - **Mixed line endings** are likely (Windows origin). Be careful with editors that
   silently rewrite CRLF↔LF — prefer targeted edits.
-- **Large/binary assets** exist (`pub/Ash.zip` ~60 MB, forum videos, `cgi-bin/members`
-  ~2 MB). Avoid commands that load the whole tree into memory.
+- **Large/binary assets** exist (`pub/Ash.zip` ~60 MB, forum videos). Avoid
+  commands that load the whole tree into memory.
 - **No `.gitignore`** — the original upload included logs, temp files
   (`html/TMP*.htm`, `html/events/TMP*.htm`), and FTP logs. Leave them; they're part
   of the snapshot.
@@ -120,9 +111,6 @@ its value.
   **never** be deployed or served as executable CGI. On static hosting it's inert
   (just a text file), but flag it for any reviewer and never wire it up to a CGI
   runtime.
-- The flat-file `members` DB exposes **plaintext passwords and email addresses**.
-  If asked to republish any member data, strip credentials and emails first, and
-  respect the `dontshow=yes` flag per record.
 - External/off-site resources (e.g. the old `extreme-dm.com` tracker, scraped news
   sites) are dead links — expected for an archive of this age.
 
@@ -140,7 +128,7 @@ its value.
 - ❌ **Don't** re-encode files as UTF-8 (charset is iso-8859-1).
 - ❌ **Don't** rename forum/profile files or "normalize" their casing.
 - ❌ **Don't** enable `cgi-bin/*.cgi` execution on any host without first removing
-  `run.cgi` and auditing `members` for exposed credentials.
+  `run.cgi`.
 - ❌ **Don't** commit changes without human review — this repo's convention is that
   every change is reviewed before commit.
 
@@ -154,4 +142,3 @@ its value.
 - **Member photos/pages:** `profiles/<Username>/`
 - **The membership logic (read-only reference):** `cgi-bin/processmembership.cgi`, `showprofile.cgi`, `memberlist.cgi`, `profileedit.cgi`
 - **Template engine + DB layer:** `cgi-bin/ptHTML.pm`, `cgi-bin/ptDIO.pm`
-- **The data store:** `cgi-bin/members` (treat as sensitive — see above)
